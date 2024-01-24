@@ -14,7 +14,7 @@ export const Button = (props: {
 
     return (
         <div
-            className={`pt-[18px] pb-[16px] ps-[24px] pe-[25px] text-[15px] font-medium line tracking-[1px] uppercase rounded-[8px] w-fit cursor-pointer transition-colors ${styleClasses} ${props.extraClasses}`}
+            className={`pt-[18px] pb-[16px] ps-[24px] pe-[25px] text-[15px] font-medium tracking-[1px] uppercase rounded-[8px] w-fit cursor-pointer transition-colors ${styleClasses} ${props.extraClasses}`}
         >
             {props.buttonText}
         </div>
