@@ -28,7 +28,7 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="mb-[120px] md:mb-[60px] xl:mb-[160px] xl:grid xl:grid-cols-3 xl:gap-[30px]">
+            <div className="mb-[311px] md:mb-[331px] xl:mb-[380px] xl:grid xl:grid-cols-3 xl:gap-[30px]">
                 <GenericContentComponent
                     imageUrl="/assets/home/desktop/illustration-passionate.svg"
                     imageAltText="illustration-passionate"
