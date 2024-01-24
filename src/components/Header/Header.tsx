@@ -23,8 +23,8 @@ export const Header = () => {
 
     return (
         <Wrapper extraClasses="relative">
-            <header className="px-[24px]">
-                <div className="flex items-center justify-between pt-[39px] pb-[37px] bg-white">
+            <header className="px-[24px] md:px-0">
+                <div className="flex items-center justify-between pt-[39px] pb-[37px] md:pt-[64px] md:pb-[67px] bg-white">
                     <Image
                         src="/assets/shared/desktop/logo-dark.png"
                         alt="designo logo light"

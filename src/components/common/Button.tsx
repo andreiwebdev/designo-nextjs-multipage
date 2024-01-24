@@ -1,8 +1,8 @@
-type Props = {
+export const Button = (props: {
     style: string;
-};
-
-export const Button = (props: Props) => {
+    buttonText: string;
+    extraClasses?: string;
+}) => {
     let styleClasses;
     if (props.style === "light") {
         styleClasses =
@@ -14,9 +14,9 @@ export const Button = (props: Props) => {
 
     return (
         <div
-            className={`pt-[18px] pb-[16px] ps-[24px] pe-[25px] text-[15px] font-medium line tracking-[1px] uppercase rounded-[8px] w-fit cursor-pointer transition-colors ${styleClasses}`}
+            className={`pt-[18px] pb-[16px] ps-[24px] pe-[25px] text-[15px] font-medium line tracking-[1px] uppercase rounded-[8px] w-fit cursor-pointer transition-colors ${styleClasses} ${props.extraClasses}`}
         >
-            Learn More
+            {props.buttonText}
         </div>
     );
 };
