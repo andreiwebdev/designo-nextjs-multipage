@@ -35,10 +35,10 @@ export const CardDescriptionImage = (props: {
                         : "xl:order-2"
                 }`}
             >
-                <div className="text-peach text-[32px] font-medium leading-[36px] mb-[24px] md:text-[40px] md:leading-[48px]">
+                <div className="text-peach text-[32px] font-medium leading-[36px] mb-[24px] md:text-[40px] md:leading-[48px] z-10 relative">
                     {props.title}
                 </div>
-                <div>
+                <div className="relative z-10">
                     <p className="mb-[32px]">{props.firstParagraph}</p>
                     <p>{props.secondParagraph}</p>
                 </div>

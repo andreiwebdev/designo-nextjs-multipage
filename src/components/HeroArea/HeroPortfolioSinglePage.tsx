@@ -5,10 +5,10 @@ export const HeroPortfolioSinglePage = (props: {
     return (
         <div className="px-[24px] bg-peach relative py-[105px] md:py-[64px] md:rounded-[15px] mb-[120px] xl:mb-[160px] overflow-hidden">
             <div>
-                <div className="text-white text-center text-[32px] font-medium leading-[36px] mb-[14px] max-w-[327px] mx-auto md:max-w-[573px] md:text-[48px] md:leading-[48px] xl:max-w-[540px] xl:mb-[11px] z-10">
+                <div className="text-white text-center text-[32px] font-medium leading-[36px] mb-[14px] max-w-[327px] mx-auto md:max-w-[573px] md:text-[48px] md:leading-[48px] xl:max-w-[540px] xl:mb-[11px] z-10 relative">
                     {props.title}
                 </div>
-                <p className="text-white text-center max-w-[327px] mx-auto md:max-w-[445px]">
+                <p className="text-white text-center max-w-[327px] mx-auto md:max-w-[445px] z-10 relative">
                     {props.description}
                 </p>
                 <div
