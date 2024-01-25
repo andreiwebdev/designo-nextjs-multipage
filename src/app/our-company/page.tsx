@@ -30,7 +30,7 @@ export default function OurCompany() {
                     imageBgDirection="right"
                     title="Canada"
                     buttonText="See Location"
-                    buttonLink="/"
+                    buttonLink="/locations"
                     buttonExtraClasses="mx-auto md:ml-0 md:mr-auto xl:mx-auto"
                 />
                 <GenericContentComponent
@@ -39,7 +39,7 @@ export default function OurCompany() {
                     imageBgDirection="bottom"
                     title="Australia"
                     buttonText="See Location"
-                    buttonLink="/"
+                    buttonLink="/locations"
                     buttonExtraClasses="mx-auto md:ml-0 md:mr-auto xl:mx-auto"
                 />
                 <GenericContentComponent
@@ -48,7 +48,7 @@ export default function OurCompany() {
                     imageBgDirection="top"
                     title="United Kingdom"
                     buttonText="See Location"
-                    buttonLink="/"
+                    buttonLink="/locations"
                     buttonExtraClasses="mx-auto md:ml-0 md:mr-auto xl:mx-auto"
                 />
                 <div
