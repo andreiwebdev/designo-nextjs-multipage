@@ -3,7 +3,7 @@ import { BackgroundImage, Button } from "../common";
 
 export const HeroAreaHome = () => {
     return (
-        <div className="px-[24px] bg-peach pt-[80px] h-full min-h-[900px] relative overflow-hidden mb-[120px] md:rounded-[15px] md:pt-[60px] md:px-[58px] xl:mb-[160px] xl:min-h-[640px] xl:px-[95px] xl:flex xl:flex-col xl:justify-center">
+        <div className="px-[24px] bg-peach pt-[80px] h-[80vh] relative overflow-hidden mb-[120px] md:rounded-[15px] md:pt-[60px] md:px-[58px] xl:mb-[160px] xl:h-auto xl:min-h-[45vh] xl:px-[95px] xl:flex xl:flex-col xl:justify-center">
             <BackgroundImage
                 imageSrc="/assets/home/desktop/bg-pattern-hero-home.svg"
                 altText="bg pattern hero home"
@@ -24,7 +24,7 @@ export const HeroAreaHome = () => {
                     extraClasses="mx-auto mb-[80px] xl:mx-0"
                 />
             </div>
-            <div className="absolute top-[200px] left-0 h-[500px] w-full xl:h-[500px] xl:max-w-[60%] xl:w-screen xl:-right-[60px] xl:left-auto xl:-top-[60px]">
+            <div className="absolute top-[30%] left-0 h-full w-full  xl:h-[500px] xl:max-w-[60%] xl:w-screen xl:-right-[80px] xl:left-auto xl:-top-[80px]">
                 <div className="relative w-full h-screen">
                     <Image
                         src="/assets/home/desktop/image-hero-phone.png"
