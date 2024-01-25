@@ -45,7 +45,7 @@ export default async function PortfolioSinglePage(props: any) {
                             <Link
                                 key={item.id}
                                 href="/"
-                                className="group hover:bg-peach bg-[#FDF3F0] rounded-[15px] mb-[40px] last:mb-0 block sm:flex sm:items-center sm:mb-[30px] xl:block xl:mb-0"
+                                className="group hover:bg-peach transition-colors bg-[#FDF3F0] rounded-[15px] mb-[40px] last:mb-0 block sm:flex sm:items-center sm:mb-[30px] xl:block xl:mb-0"
                             >
                                 <div className="relative w-full h-[320px] rounded-t-[15px] sm:w-[50%] xl:w-full">
                                     <BackgroundImage
@@ -54,8 +54,8 @@ export default async function PortfolioSinglePage(props: any) {
                                         extraClasses="rounded-t-[15px] sm:rounded-tr-[0px] sm:rounded-bl-[15px] sm:rounded-tl-[15px] xl:rounded-b-[0px] xl:rounded-t-[15px]"
                                     />
                                 </div>
-                                <div className="bg-[#FDF3F0] text-center rounded-b-[15px] py-[20px] px-[15px] sm:w-[50%] xl:w-full group-hover:bg-peach group-hover:text-white">
-                                    <div className="group-hover:text-white text-peach text-[20px] font-medium leading-[26px] tracking-[5px] uppercase mb-3">
+                                <div className="bg-[#FDF3F0] text-center rounded-b-[15px] py-[20px] px-[15px] sm:w-[50%] xl:w-full group-hover:bg-peach transition-colors group-hover:text-white">
+                                    <div className="group-hover:text-white text-peach transition-colors text-[20px] font-medium leading-[26px] tracking-[5px] uppercase mb-3">
                                         {item.title}
                                     </div>
                                     <p>{item.description}</p>
