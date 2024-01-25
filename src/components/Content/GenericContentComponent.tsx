@@ -1,14 +1,19 @@
 import Image from "next/image";
+import { Button } from "../common";
+import Link from "next/link";
 
 export const GenericContentComponent = (props: {
     imageUrl: string;
     imageAltText: string;
     imageBgDirection: string;
     title: string;
-    text: string;
+    text?: string;
+    buttonText?: string;
+    buttonLink?: string;
+    buttonExtraClasses?: string;
 }) => {
     return (
-        <div className="text-center mb-[80px] last:mb-0 md:text-left md:grid md:grid-cols-2 xl:grid-cols-1 xl:text-center xl:flex xl:flex-col">
+        <div className="text-center mb-[80px] last:mb-0 md:text-left md:grid md:grid-cols-2 md:items-center xl:grid-cols-1 xl:text-center xl:flex xl:flex-col">
             <div className="relative md:w-fit xl:w-full">
                 <Image
                     src={props.imageUrl}
@@ -28,9 +33,20 @@ export const GenericContentComponent = (props: {
                 <div className="text-darkGrey text-[20px] font-medium leading-[26px] tracking-[5px] uppercase mb-[32px] md:w-full">
                     {props.title}
                 </div>
-                <p className="text-darkGrey w-[327px] mx-auto md:w-full">
-                    {props.text}
-                </p>
+                {props.text && (
+                    <p className="text-darkGrey w-[327px] mx-auto md:w-full">
+                        {props.text}
+                    </p>
+                )}
+                {props.buttonText && props.buttonLink && (
+                    <Link href={props.buttonLink}>
+                        <Button
+                            buttonText={props.buttonText}
+                            style="dark"
+                            extraClasses={props.buttonExtraClasses}
+                        />
+                    </Link>
+                )}
             </div>
         </div>
     );

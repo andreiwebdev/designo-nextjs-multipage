@@ -86,7 +86,7 @@ export default async function PortfolioSinglePage(props: any) {
                 </div>
             </div>
             <div
-                className="hiddex xl:block w-[1006px] h-[594px] bg-lightGrey opacity-50 absolute -z-[1] bottom-0 top-[150px] left-0"
+                className="hidden xl:block w-[1006px] h-[594px] bg-lightGrey opacity-50 absolute -z-[1] bottom-0 top-[150px] left-0"
                 style={{ borderRadius: "297px 297px 297px 0px" }}
             ></div>
         </main>

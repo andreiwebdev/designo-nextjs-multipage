@@ -51,7 +51,7 @@ export default function Home() {
                     text=" We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide."
                 />
                 <div
-                    className="hiddex xl:block w-[1006px] h-[594px] bg-lightGrey -z-[1] opacity-50 absolute right-0"
+                    className="hidden xl:block w-[1006px] h-[594px] bg-lightGrey -z-[1] opacity-50 absolute right-0"
                     style={{
                         borderRadius: "297px 0 297px 297px",
                         transform: "translateY(130px)",

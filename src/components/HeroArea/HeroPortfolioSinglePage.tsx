@@ -12,35 +12,35 @@ export const HeroPortfolioSinglePage = (props: {
                     {props.description}
                 </p>
                 <div
-                    className="w-[292px] h-[292px] rounded-full bg-red-500 absolute top-[25px] right-0 opacity-30 md:-top-[140px] md:-right-[140px] xl:right-0"
+                    className="w-[292px] h-[292px] rounded-full absolute top-[25px] right-0 opacity-30 md:-top-[140px] md:-right-[140px] xl:right-0"
                     style={{
                         background:
                             "linear-gradient(178deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                     }}
                 ></div>
                 <div
-                    className="hidden md:block w-[292px] h-[292px] rounded-full bg-red-500 absolute opacity-30 md:-top-[140px] md:right-[151px] xl:right-[302px]"
+                    className="hidden md:block w-[292px] h-[292px] rounded-full absolute opacity-30 md:-top-[140px] md:right-[151px] xl:right-[302px]"
                     style={{
                         background:
                             "linear-gradient(290deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                     }}
                 ></div>
                 <div
-                    className="hidden md:block w-[292px] h-[292px] rounded-full bg-red-500 absolute opacity-30 md:-top-[140px] md:right-[450px] xl:right-[620px]"
+                    className="hidden md:block w-[292px] h-[292px] rounded-full absolute opacity-30 md:-top-[140px] md:right-[450px] xl:right-[620px]"
                     style={{
                         background:
                             "linear-gradient(290deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                     }}
                 ></div>
                 <div
-                    className="hidden md:block w-[292px] h-[292px] rounded-full bg-red-500 absolute opacity-30 md:-bottom-[180px] md:-right-[140px] xl:right-0"
+                    className="hidden md:block w-[292px] h-[292px] rounded-full absolute opacity-30 md:-bottom-[180px] md:-right-[140px] xl:right-0"
                     style={{
                         background:
                             "linear-gradient(205deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                     }}
                 ></div>
                 <div
-                    className="hidden md:block w-[292px] h-[292px] rounded-full bg-red-500 absolute opacity-30 md:-bottom-[203px] md:right-[151px] xl:right-[302px]"
+                    className="hidden md:block w-[292px] h-[292px] rounded-full absolute opacity-30 md:-bottom-[203px] md:right-[151px] xl:right-[302px]"
                     style={{
                         background:
                             "linear-gradient(290deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",

@@ -31,7 +31,7 @@ export const HeroAreaHome = () => {
                         alt="hero phone"
                         fill
                         quality={100}
-                        sizes="100vw"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-contain absolute z-[1] xl:object-top xl:!top-[0px]"
                         priority
                     />
