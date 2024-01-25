@@ -68,13 +68,15 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="md:flex md:items-center md:justify-between md:mb-10">
-                    <Image
-                        src="/assets/shared/desktop/logo-light.png"
-                        alt="designo logo light"
-                        className="mx-auto mb-[32px] md:m-0"
-                        width={202}
-                        height={27}
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/assets/shared/desktop/logo-light.png"
+                            alt="designo logo light"
+                            className="mx-auto mb-[32px] md:m-0"
+                            width={202}
+                            height={27}
+                        />
+                    </Link>
                     <div className="w-full h-[1px] bg-white opacity-[0.1] mb-8 md:hidden"></div>
                     <ul className="list-none text-white text-[14px] uppercase tracking-[2px] leading-[14px] mb-[40px] md:flex md:mb-0 md:gap-11">
                         <li className="mb-[32px] md:mb-0 border border-black hover:border-b-white">

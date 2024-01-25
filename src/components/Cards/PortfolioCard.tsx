@@ -6,6 +6,7 @@ export const PortfolioCard = (props: {
     title: string;
     link: string;
     imageSrc: string;
+    imageAltText?: string;
     extraClasses?: string;
 }) => {
     return (
@@ -22,7 +23,11 @@ export const PortfolioCard = (props: {
             </div>
             <BackgroundImage
                 imageSrc={props.imageSrc}
-                altText="image-web-design-small"
+                altText={
+                    props.imageAltText
+                        ? props.imageAltText
+                        : "image-web-design-small"
+                }
                 extraClasses="!z-1 rounded-[15px]"
             />
             <div className="bg-[rgba(0,0,0,0.5)] absolute w-full h-full top-0 left-0 rounded-[15px] group-hover:bg-peach group-hover:opacity-[0.8]  transition-colors"></div>

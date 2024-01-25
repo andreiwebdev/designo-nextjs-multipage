@@ -28,7 +28,7 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="mb-[311px] md:mb-[331px] xl:mb-[380px] xl:grid xl:grid-cols-3 xl:gap-[30px] xl:relative">
+            <div className="mb-[311px] md:mb-[331px] xl:mb-[380px] xl:grid xl:grid-cols-3 xl:gap-[30px]">
                 <GenericContentComponent
                     imageUrl="/assets/home/desktop/illustration-passionate.svg"
                     imageAltText="illustration-passionate"
@@ -51,8 +51,11 @@ export default function Home() {
                     text=" We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide."
                 />
                 <div
-                    className="hiddex xl:block w-[1006px] h-[594px] bg-lightGrey opacity-50 absolute -z-[1] bottom-0 top-[150px] -right-[246px]"
-                    style={{ borderRadius: "297px 0 297px 297px" }}
+                    className="hiddex xl:block w-[1006px] h-[594px] bg-lightGrey -z-[1] opacity-50 absolute right-0"
+                    style={{
+                        borderRadius: "297px 0 297px 297px",
+                        transform: "translateY(130px)",
+                    }}
                 ></div>
             </div>
         </main>

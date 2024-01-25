@@ -19,7 +19,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
-            <body className={jost.className}>
+            <body className={jost.className + "relative"}>
                 <Header />
                 <Wrapper>{children}</Wrapper>
                 <Footer />
