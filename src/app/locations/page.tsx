@@ -18,6 +18,8 @@ export default function Locations() {
                 ]}
                 mapPosition="right"
                 title="Canada"
+                mapCoords={[43.64428287311506, -79.39457671728307]}
+                mapZoom={12}
             />
             <InfoCardMap
                 imageSrc="/assets/locations/desktop/image-map-australia.png"
@@ -34,6 +36,8 @@ export default function Locations() {
                 ]}
                 mapPosition="left"
                 title="Australia"
+                mapCoords={[-30.316838637388674, 149.76919547479105]}
+                mapZoom={11}
             />
             <InfoCardMap
                 imageSrc="/assets/locations/desktop/image-map-united-kingdom.png"
@@ -50,6 +54,8 @@ export default function Locations() {
                 ]}
                 mapPosition="right"
                 title="United Kingdom"
+                mapCoords={[51.732124162575055, -3.8619213488807547]}
+                mapZoom={10}
             />
         </main>
     );

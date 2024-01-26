@@ -1,4 +1,7 @@
-import { BackgroundImage } from "../common";
+"use client";
+
+import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer } from "react-leaflet";
 
 export const InfoCardMap = (props: {
     imageSrc: string;
@@ -7,6 +10,8 @@ export const InfoCardMap = (props: {
     leftDescription: string[];
     rightDescription: string[];
     mapPosition: "left" | "right";
+    mapCoords: [number, number];
+    mapZoom: number;
 }) => {
     return (
         <div className="xl:flex xl:items-center xl:gap-[30px] mb-[60px] md:mb-[120px] xl:mb-[30px]">
@@ -15,11 +20,14 @@ export const InfoCardMap = (props: {
                     props.mapPosition === "right" ? "xl:order-2" : "xl:order-1"
                 }`}
             >
-                <BackgroundImage
-                    imageSrc={props.imageSrc}
-                    altText={props.altText}
-                    extraClasses="md:rounded-[15px]"
-                />
+                <MapContainer
+                    center={props.mapCoords}
+                    zoom={props.mapZoom}
+                    scrollWheelZoom={true}
+                    className="w-full h-full md:rounded-[15px]"
+                >
+                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                </MapContainer>
             </div>
             <div
                 className={`relative bg-lightPink py-[80px] px-[24px] text-center mb-[30px] md:rounded-[15px] md:text-left md:px-[75px] xl:mb-0 xl:w-[70%] xl:h-[326px] overflow-hidden ${
@@ -35,13 +43,19 @@ export const InfoCardMap = (props: {
                             {props.leftDescription.map((item, index) => {
                                 if (index === 0) {
                                     return (
-                                        <div className="text-darkGray text-[15px] md:text-[16px] leading-[25px] font-medium">
+                                        <div
+                                            key={index}
+                                            className="text-darkGray text-[15px] md:text-[16px] leading-[25px] font-medium"
+                                        >
                                             {item}
                                         </div>
                                     );
                                 } else {
                                     return (
-                                        <div className="text-darkGray text-[15px] md:text-[16px] leading-[25px]">
+                                        <div
+                                            key={index}
+                                            className="text-darkGray text-[15px] md:text-[16px] leading-[25px]"
+                                        >
                                             {item}
                                         </div>
                                     );
@@ -52,13 +66,19 @@ export const InfoCardMap = (props: {
                             {props.rightDescription.map((item, index) => {
                                 if (index === 0) {
                                     return (
-                                        <div className="text-darkGray text-[15px] md:text-[16px] leading-[25px] font-medium">
+                                        <div
+                                            key={index}
+                                            className="text-darkGray text-[15px] md:text-[16px] leading-[25px] font-medium"
+                                        >
                                             {item}
                                         </div>
                                     );
                                 } else {
                                     return (
-                                        <div className="text-darkGray text-[15px] md:text-[16px] leading-[25px]">
+                                        <div
+                                            key={index}
+                                            className="text-darkGray text-[15px] md:text-[16px] leading-[25px]"
+                                        >
                                             {item}
                                         </div>
                                     );
