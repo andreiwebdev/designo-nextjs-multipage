@@ -31,35 +31,35 @@ export const Footer = () => {
                             extraClasses="mx-auto xl:ml-auto xl:mr-0"
                         />
                         <div
-                            className="hidden xl:block w-[292px] h-[292px] rounded-full bg-red-500 -z-[1] absolute bottom-[50%] right-0 opacity-30"
+                            className="hidden xl:block w-[292px] h-[292px] rounded-full -z-[1] absolute bottom-[50%] right-0 opacity-30"
                             style={{
                                 background:
                                     "linear-gradient(90deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                             }}
                         ></div>
                         <div
-                            className="hidden xl:block w-[292px] h-[292px] rounded-full bg-red-500 -z-[1] absolute bottom-[50%] right-[292px] opacity-30"
+                            className="hidden xl:block w-[292px] h-[292px] rounded-full -z-[1] absolute bottom-[50%] right-[292px] opacity-30"
                             style={{
                                 background:
                                     "linear-gradient(34deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                             }}
                         ></div>
                         <div
-                            className="hidden xl:block w-[292px] h-[292px] rounded-full bg-red-500 -z-[1] absolute top-[50%] right-0 opacity-30"
+                            className="hidden xl:block w-[292px] h-[292px] rounded-full -z-[1] absolute top-[50%] right-0 opacity-30"
                             style={{
                                 background:
                                     "linear-gradient(358deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                             }}
                         ></div>
                         <div
-                            className="hidden xl:block w-[292px] h-[292px] rounded-full bg-red-500 -z-[1] absolute top-[50%] right-[292px] opacity-30"
+                            className="hidden xl:block w-[292px] h-[292px] rounded-full -z-[1] absolute top-[50%] right-[292px] opacity-30"
                             style={{
                                 background:
                                     "linear-gradient(90deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
                             }}
                         ></div>
                         <div
-                            className="hidden xl:block w-[292px] h-[292px] rounded-full bg-red-500 -z-[1] absolute top-[50%] right-[584px] opacity-30"
+                            className="hidden xl:block w-[292px] h-[292px] rounded-full -z-[1] absolute top-[50%] right-[584px] opacity-30"
                             style={{
                                 background:
                                     "linear-gradient(190deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%)",
