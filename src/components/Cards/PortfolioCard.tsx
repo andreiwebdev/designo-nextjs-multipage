@@ -12,7 +12,7 @@ export const PortfolioCard = (props: {
     return (
         <Link
             href={props.link}
-            className={`group w-full h-[250px] rounded-[15px] flex flex-col items-center justify-center gap-[12px] relative z-[2] mb-[24px] last:mb-0 md:h-[200px] md:gap-[20px] ${props.extraClasses}`}
+            className={`group w-full h-[250px] rounded-[15px] flex flex-col items-center justify-center gap-[12px] relative z-[2] mb-[24px] md:h-[200px] md:gap-[20px] ${props.extraClasses}`}
         >
             <div className="text-white text-[28px] font-medium tracking-[1.4px] leading-[36px] uppercase z-[2] md:text-[40px] md:leading-[48px] md:tracking-[2px]">
                 {props.title}

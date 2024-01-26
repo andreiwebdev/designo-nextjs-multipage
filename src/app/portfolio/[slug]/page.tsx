@@ -1,9 +1,11 @@
 import { PortfolioCard } from "@/components/Cards";
 import { HeroPortfolioSinglePage } from "@/components/HeroArea";
-import { BackgroundImage } from "@/components/common";
-import Link from "next/link";
 
 import { promises as fs } from "fs";
+import {
+    PortfolioCardsSection,
+    ServicesCardsSection,
+} from "@/components/PortfolioSinglePage";
 
 export default async function PortfolioSinglePage(props: {
     params: { slug: string };
@@ -32,58 +34,8 @@ export default async function PortfolioSinglePage(props: {
                 description={data[0].description}
             />
             <div className="px-[24px] md:px-0">
-                {/* cards */}
-                <div className="sm:block xl:grid xl:grid-cols-3 xl:gap-[30px] mb-[96px] md:mb-[120px] xl:mb-[160px]">
-                    {data[0].projects.map(
-                        (item: {
-                            id: string;
-                            imageSrc: string;
-                            altText: string;
-                            title: string;
-                            description: string;
-                        }) => (
-                            <Link
-                                key={item.id}
-                                href="/"
-                                className="group hover:bg-peach transition-colors bg-[#FDF3F0] rounded-[15px] mb-[40px] last:mb-0 block sm:flex sm:items-center sm:mb-[30px] xl:block xl:mb-0"
-                            >
-                                <div className="relative w-full h-[320px] rounded-t-[15px] sm:w-[50%] xl:w-full">
-                                    <BackgroundImage
-                                        imageSrc={item.imageSrc}
-                                        altText={item.altText}
-                                        extraClasses="rounded-t-[15px] sm:rounded-tr-[0px] sm:rounded-bl-[15px] sm:rounded-tl-[15px] xl:rounded-b-[0px] xl:rounded-t-[15px]"
-                                    />
-                                </div>
-                                <div className="bg-[#FDF3F0] text-center rounded-b-[15px] py-[20px] px-[15px] sm:w-[50%] xl:w-full group-hover:bg-peach transition-colors group-hover:text-white">
-                                    <div className="group-hover:text-white text-peach transition-colors text-[20px] font-medium leading-[26px] tracking-[5px] uppercase mb-3">
-                                        {item.title}
-                                    </div>
-                                    <p>{item.description}</p>
-                                </div>
-                            </Link>
-                        )
-                    )}
-                </div>
-                {/* services cards */}
-                <div className="mb-[286px] md:mb-[384px] xl:mb-[380px] xl:grid xl:grid-cols-2 xl:gap-[30px]">
-                    {data[0].projectsCats.map(
-                        (item: {
-                            id: string;
-                            title: string;
-                            slug: string;
-                            imageSrc: string;
-                            altText: string;
-                        }) => (
-                            <PortfolioCard
-                                title={item.title}
-                                link={item.slug}
-                                imageSrc={item.imageSrc}
-                                imageAltText={item.altText}
-                                extraClasses="xl:h-[308px]"
-                            />
-                        )
-                    )}
-                </div>
+                <PortfolioCardsSection data={data} />
+                <ServicesCardsSection data={data} />
             </div>
             <div
                 className="hidden xl:block w-[1006px] h-[594px] bg-lightGrey opacity-50 absolute -z-[1] bottom-0 top-[150px] left-0"

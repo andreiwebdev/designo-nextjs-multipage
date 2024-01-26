@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer } from "react-leaflet";
 
@@ -14,7 +15,13 @@ export const InfoCardMap = (props: {
     mapZoom: number;
 }) => {
     return (
-        <div className="xl:flex xl:items-center xl:gap-[30px] mb-[60px] md:mb-[120px] xl:mb-[30px]">
+        <motion.div
+            viewport={{ once: false }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "easeIn", duration: 0.5, delay: 0.15 }}
+            className="xl:flex xl:items-center xl:gap-[30px] mb-[60px] md:mb-[120px] xl:mb-[30px]"
+        >
             <div
                 className={`w-full h-[320px] md:h-[326px] md:mb-[31px] relative xl:mb-0 xl:w-[30%] xl:h-[326px] ${
                     props.mapPosition === "right" ? "xl:order-2" : "xl:order-1"
@@ -102,6 +109,6 @@ export const InfoCardMap = (props: {
                     }}
                 ></div>
             </div>
-        </div>
+        </motion.div>
     );
 };

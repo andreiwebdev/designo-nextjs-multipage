@@ -5,9 +5,11 @@ import Image from "next/image";
 import { Wrapper } from "../common";
 import { DesktopMenu, MobileMenu, MobileMenuToggler } from ".";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
+    const pathname = usePathname();
 
     const handleToggleMenu = () => {
         setToggleMenu(!toggleMenu);
@@ -22,9 +24,15 @@ export const Header = () => {
         }
     }, [toggleMenu]);
 
+    useEffect(() => {
+        if (toggleMenu) {
+            setToggleMenu(false);
+        }
+    }, [pathname]);
+
     return (
         <Wrapper extraClasses="relative">
-            <header className="px-[24px] md:px-0">
+            <div className="px-[24px] md:px-0">
                 <div className="flex items-center justify-between pt-[39px] pb-[37px] md:pt-[64px] md:pb-[67px] bg-white">
                     <Link href="/">
                         <Image
@@ -40,7 +48,7 @@ export const Header = () => {
                     />
                     <DesktopMenu />
                 </div>
-            </header>
+            </div>
             <MobileMenu toggleMenu={toggleMenu} />
         </Wrapper>
     );

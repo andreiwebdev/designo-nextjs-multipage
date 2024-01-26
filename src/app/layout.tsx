@@ -4,6 +4,7 @@ import "./globals.css";
 import { Wrapper } from "@/components/common";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import Template from "./template";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -21,7 +22,9 @@ export default function RootLayout({
             <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
             <body className={jost.className + " relative"}>
                 <Header />
-                <Wrapper>{children}</Wrapper>
+                <Wrapper>
+                    <Template>{children}</Template>
+                </Wrapper>
                 <Footer />
             </body>
         </html>

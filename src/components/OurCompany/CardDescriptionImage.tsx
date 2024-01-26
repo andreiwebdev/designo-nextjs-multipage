@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { BackgroundImage } from "../common";
 
 export const CardDescriptionImage = (props: {
@@ -10,7 +13,11 @@ export const CardDescriptionImage = (props: {
     containerExtraClasses?: string;
 }) => {
     return (
-        <div
+        <motion.div
+            viewport={{ once: false }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "easeIn", duration: 0.5, delay: 0.15 }}
             className={`xl:flex xl:items-center mb-[120px] xl:mb-[160px] ${props.containerExtraClasses}`}
         >
             <div
@@ -57,6 +64,6 @@ export const CardDescriptionImage = (props: {
                     }}
                 ></div>
             </div>
-        </div>
+        </motion.div>
     );
 };
