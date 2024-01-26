@@ -29,7 +29,7 @@ export const ServicesSection = () => {
                     title="Graphic Design"
                     link="/portfolio/graphic-design"
                     imageSrc="/assets/home/desktop/image-graphic-design.jpg"
-                    extraClasses="xl:flex-grow"
+                    extraClasses="xl:flex-grow xl:mb-0"
                 />
             </div>
         </motion.div>
