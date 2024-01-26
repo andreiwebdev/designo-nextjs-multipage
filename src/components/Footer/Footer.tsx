@@ -27,13 +27,13 @@ export const Footer = () => {
                     </Link>
                     <div className="w-full h-[1px] bg-white opacity-[0.1] mb-8 md:hidden"></div>
                     <ul className="list-none text-white text-[14px] uppercase tracking-[2px] leading-[14px] mb-[40px] md:flex md:mb-0 md:gap-11">
-                        <li className="mb-[32px] md:mb-0 border border-black hover:border-b-white">
+                        <li className="mb-[32px] md:mb-0 border border-black md:hover:border-b-white">
                             <Link href="/our-company">Our Company</Link>
                         </li>
-                        <li className="mb-[32px] md:mb-0 border border-black hover:border-b-white">
+                        <li className="mb-[32px] md:mb-0 border border-black md:hover:border-b-white">
                             <Link href="/locations">Locations</Link>
                         </li>
-                        <li className="mb-[32px] md:mb-0 border border-black hover:border-b-white">
+                        <li className="mb-[32px] md:mb-0 border border-black md:hover:border-b-white">
                             <Link href="/contact">Contact</Link>
                         </li>
                     </ul>
