@@ -1,21 +1,15 @@
-import { PortfolioCard } from "@/components/Cards";
 import { HeroPortfolioSinglePage } from "@/components/HeroArea";
-
-import { promises as fs } from "fs";
 import {
     PortfolioCardsSection,
     ServicesCardsSection,
 } from "@/components/PortfolioSinglePage";
+import { getPortfolioData } from "@/utils/getPortfolioData";
 
 export default async function PortfolioSinglePage(props: {
     params: { slug: string };
 }) {
-    const file = await fs.readFile(
-        process.cwd() + "/src/app/portfolioSinglePages.json",
-        "utf8"
-    );
+    const parsedData = await getPortfolioData();
 
-    const parsedData = JSON.parse(file);
     const data = parsedData.filter(
         (item: any) => item.slug === props.params.slug
     );
