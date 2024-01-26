@@ -5,7 +5,9 @@ import Link from "next/link";
 
 import { promises as fs } from "fs";
 
-export default async function PortfolioSinglePage(props: any) {
+export default async function PortfolioSinglePage(props: {
+    params: { slug: string };
+}) {
     const file = await fs.readFile(
         process.cwd() + "/src/app/portfolioSinglePages.json",
         "utf8"
@@ -15,8 +17,6 @@ export default async function PortfolioSinglePage(props: any) {
     const data = parsedData.filter(
         (item: any) => item.slug === props.params.slug
     );
-
-    console.log(data);
 
     if (data.length < 1)
         return (
