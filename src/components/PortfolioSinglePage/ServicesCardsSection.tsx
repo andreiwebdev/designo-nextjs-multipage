@@ -18,6 +18,7 @@ export const ServicesCardsSection = (props: any) => {
                     key: number
                 ) => (
                     <motion.div
+                        key={item.id}
                         viewport={{ once: false }}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}

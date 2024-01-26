@@ -19,6 +19,7 @@ export const PortfolioCardsSection = (props: any) => {
                     key: number
                 ) => (
                     <motion.div
+                        key={item.id}
                         viewport={{ once: false }}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +30,6 @@ export const PortfolioCardsSection = (props: any) => {
                         }}
                     >
                         <Link
-                            key={item.id}
                             href="/"
                             className="group hover:bg-peach transition-colors bg-[#FDF3F0] rounded-[15px] mb-[40px] block sm:flex sm:items-center sm:mb-[30px] xl:block xl:mb-0"
                         >
