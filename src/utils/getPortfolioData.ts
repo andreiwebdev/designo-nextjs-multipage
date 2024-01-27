@@ -4,8 +4,7 @@ export const getPortfolioData = async () => {
             method: "GET",
             headers: {
                 "X-Master-Key":
-                    "$2a$10$kiYsk12k4TbbKUp2qiyTd." +
-                        process.env.NEXT_PUBLIC_API_KEY || "",
+                    `$2a$10$kiYsk12k4TbbKUp2qiyTd.${process.env.API_KEY}` || "",
             },
         });
 
