@@ -28,7 +28,7 @@ export const Header = () => {
         if (toggleMenu) {
             setToggleMenu(false);
         }
-    }, [pathname, toggleMenu]);
+    }, [pathname]);
 
     return (
         <Wrapper extraClasses="relative">
